@@ -1,6 +1,6 @@
 import java.io.*;
 
-class tower_bonus {
+class Solution {
     /**
      * Precomputes the walking and waiting times for every power of 2 length arc.
      * Uses these precomputed arcs to simulate each starting point in O(log N) time.

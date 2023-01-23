@@ -1,6 +1,6 @@
 import java.io.*;
 
-class tower_main {
+class Solution {
     /**
      * Simulates going around the circle, beginning at every tower.
      * This runs in O(N^2) time, only passing the main test set.
