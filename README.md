@@ -5,7 +5,9 @@
 
 ## Editorial Progress
 **Published**: rso, paint, bottles, tetris
+
 **Drafted**: bookshelf, toki, tower, extrusion
+
 **In Progress**: bread, sausages, warden, warden2
 
 ## Quick Start
