@@ -1,4 +1,4 @@
-// Credits: Joshc (Joshua Chen), RIP Poggers
+// Credits: Joshc (Joshua Chen)
 
 import java.io.*;
 import java.util.ArrayList;
