@@ -1,12 +1,17 @@
 ![CALICO Logo](https://calico.berkeley.edu/images/banner/blocks.png)
 
 # calico-fa22
-***Note**: This repo is under construction. Check back occasionally for updates! Last Updated: 1/23*
+***Note**: This repo is under construction. Check back occasionally for updates! Last Updated: 1/24*
 
 ## Editorial Progress
-**Published**: rso, paint, bottles, tetris
+**Published**: 
+- [Problem 1 (bookshelf): she shells book shelves by the she shelf](https://calico.berkeley.edu/files/calico-fa22/editorials/bookshelf-editorial.pdf)
+- [Problem 2 (rso): Office of Business Contracts and Brand Protection](https://calico.berkeley.edu/files/calico-fa22/editorials/rso-editorial.pdf)
+- [Problem 3 (paint): This problem was not brought to you by jane street](https://calico.berkeley.edu/files/calico-fa22/editorials/paint-editorial.pdf)
+- [Problem 4 (bottles): Water Bottles](https://calico.berkeley.edu/files/calico-fa22/editorials/bottles-editorial.pdf)
+- [Problem 11 (tetris): 'Tiger’s *Tetris* Tournament](https://calico.berkeley.edu/files/calico-fa22/editorials/tetris-editorial.pdf)
 
-**Drafted**: bookshelf, toki, tower, extrusion
+**Drafted**: toki, tower, extrusion
 
 **In Progress**: bread, sausages, warden, warden2
 
