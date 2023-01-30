@@ -69,6 +69,7 @@ def solve(W: str) -> str:
                     if second_syllable[2] != 'n' and second_syllable[1] in consonants:
                         answer = 'ike'
         return answer
+
 def main():
     T = int(input())
     for _ in range(T):
