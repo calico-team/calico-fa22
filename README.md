@@ -1,7 +1,7 @@
 ![CALICO Logo](https://calico.berkeley.edu/images/banner/blocks.png)
 
 # calico-fa22
-***Note**: This repo is under construction. Check back occasionally for updates! Last Updated: 1/31*
+***Note**: This repo is under construction. Check back occasionally for updates! Last Updated: 2/1*
 
 ## Editorial Progress
 **Published**: 
@@ -13,6 +13,7 @@
 - [Problem 7 (toki): nasin kalama pi toki pona](https://calico.berkeley.edu/files/calico-fa22/editorials/toki-editorial.pdf)
 - [Problem 8 (tower): your a wizard harry](https://calico.berkeley.edu/files/calico-fa22/editorials/tower-editorial.pdf)
 - [Problem 9 (extrusion): SOLIDWORKS is not responding](https://calico.berkeley.edu/files/calico-fa22/editorials/extrusion-editorial.pdf)
+- [Problem 10 (warden): Steve was obliterated by a sonically-charged shriek](https://calico.berkeley.edu/files/calico-fa22/editorials/warden-editorial.pdf)
 - [Problem 11 (tetris): 'Tiger’s *Tetris* Tournament](https://calico.berkeley.edu/files/calico-fa22/editorials/tetris-editorial.pdf)
 
 **Drafted**: sausages, warden, warden2
