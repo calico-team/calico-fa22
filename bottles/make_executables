@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd "$(dirname "$0")"
+
+cd executables/compare
+zip ../../bottles_compare.zip *
