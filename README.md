@@ -47,23 +47,32 @@ Note that these templates are only guaranteed to apply to the main test set of e
 ### Problem Statements
 Problem statements describe the problem contestants need to solve, as well as their input and output format. They are named `[problem name].pdf`.
 
-### Generators (Partial Coverage)
-For the problems written by Jeffrey (`bottles` and `tetris`), all backend files created in the process of preparation are also included. We currently think backend files for the other problems are too confusing to be accessible, but they may be published later.
+### Backend Files (Partial Coverage)
+For the problems written by Jeffrey (`bottles` and `tetris`), all backend files created during the process of preparation are also included. We currently think backend files for the other problems are too confusing to be accessible, but they may be published later.
 
-Each of these files are heavily documented. They are intended to be useful as one example of how to replicate test data or set up your own judging system; you may choose to instead use more popular systems like [CodeForces](https://codeforces.com/) and/or [Polygon](https://polygon.codeforces.com/).
+All of these files are heavily documented with comments. They are intended to be useful as one example of how to replicate test data or set up your own judging system; you may choose to instead use more popular systems like [CodeForces](https://codeforces.com/) and/or [Polygon](https://polygon.codeforces.com/).
 
-\* These files are only present in some problems.
+#### Submissions (All Problems)
+|File|Description|
+|---|---|
+|`submissions/accepted/*`|These are identical to the respective programs in `solutions/*`. For each problem, one of the Python models is used by the generators to generate the reference outputs.|
+|`submissions/runtime_error/*`<br>`submissions/time_limit_exceeded/*`<br>`submissions/wrong_answer/*`|These are implementations (generally written by organizers pre-contest) that seem perfect at first glance but have small bugs that cause the respective issues when judged. We predicted that most failed in-contest submissions would be categorized under one of these bugs.|
 
-|File Name|*|Description|
-|---|---|---|
-|`jewato_gen.py`||Jeffrey's personal generator utilities, custom-built for CALICO but used for all his problems, are in this script. It implements many routine functions, including test set generators, test file objects, and file system I/O. All of the generator scripts listed below use it as a base; it is identical between different problems.|
-|`[problem name]_utils.py`||Each problem has a custom-built random seed and collection of helper utilities in this file, enabling easy creation of customized tests by specifying parameters. Using `bottles` as an example, the `Bottles` class generalizes all test cases for that problem, while `BottlesMain` and `BottlesBonus` add further parameters to their corresponding subtasks.|
-|`delete.py`||This is an optional helper script for deleting ZIP archives created by `generate_data.py` if desired; the other scripts will still run correctly if this is not used.|
-|`generate_data.py`||Read this to see examples of using the generator utilties to make your own tests. It runs specific commands from the utilities file to create the test data in `./data`, along with container directories if absent.|
-|`generate_zips.py`||This program runs `generate_data.py` and additionally packages the data into a separate ZIP archive, one for each subtask. These archives follow the DOMJudge package format.|
-|`executables/compare/compare.py`|*|For problems with multiple correct answers, this file contains the bulk of the problem-specific code for the checker (backend program that enforces criteria listed in the statement).|
-|`executables/compare/build`<br>`executables/compare/run`|*|These are the other files in `executables/compare` and are generic shell scripts that use `compare.py`.|
-|`make_executables`|*|This shell script packages the `executables/compare/` directory into a ZIP archive following the DOMJudge package format.|
+#### Generators (All Problems)
+|File|Description|
+|---|---|
+|`jewato_gen.py`|Jeffrey's personal generator utilities, custom-built for CALICO but used for all his problems, are in this script. It implements many routine functions, including test set generators, test file objects, and file system I/O. All of the generator scripts listed below use it as a base; it is identical between different problems.|
+|`[problem name]_utils.py`|Each problem has a custom-built random seed and collection of helper utilities in this file, enabling easy creation of customized tests by specifying parameters. Using `bottles` as an example, the `Bottles` class generalizes all test cases for that problem, while `BottlesMain` and `BottlesBonus` add further parameters to their corresponding subtasks.|
+|`delete.py`|This is an optional helper script for deleting ZIP archives created by `generate_data.py` if desired; the other scripts will still run correctly if this is not used.|
+|`generate_data.py`|Read this to see examples of using the generator utilties to make your own tests. It runs specific commands from the utilities file to create the test data in `./data`, along with container directories if absent.|
+|`generate_zips.py`|This program runs `generate_data.py` and additionally packages the data into a separate ZIP archive, one for each subtask. These archives follow the DOMJudge package format.|
+
+#### Checkers (`bottles` Only)
+|File|Description|
+|---|---|
+|`executables/compare/compare.py`|For problems with multiple correct answers, this file contains the bulk of the problem-specific code for the checker (backend program that enforces criteria listed in the statement).|
+|`executables/compare/build`<br>`executables/compare/run`|These are the other files in `executables/compare` and are generic shell scripts that use `compare.py`.|
+|`make_executables`|This shell script packages the `executables/compare/` directory into a ZIP archive following the DOMJudge package format.|
 
 ### Directory Tree
 ```
